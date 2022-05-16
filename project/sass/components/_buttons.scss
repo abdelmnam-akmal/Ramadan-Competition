@@ -1,0 +1,18 @@
+.main-btn {
+    background: transparent linear-gradient(270deg, #00DED8 0%, #00DED83D 0%, #B0F6ED 0%, #EDFEF4 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #AAAAAA29;
+    border-radius: 10px;
+    width: 138px;
+    height: 35px;
+    border: none;
+    color: $blue-color;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.main-div {
+    background: transparent linear-gradient(180deg, #EAF8FE 0%, #ECFCF7 0%, #ECFCF7 11%, #EAF8FE 100%, #EDFEF4 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 25px;
+}

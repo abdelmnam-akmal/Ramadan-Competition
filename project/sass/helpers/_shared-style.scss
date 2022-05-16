@@ -1,0 +1,223 @@
+/* =====[Start: Global rules]===== */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none !important;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $blue-color;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba($color: $blue-color, $alpha: 0.7);
+}
+
+// Main Section
+.main-section {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba($flat-sky, .2), $white-color);
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        top: -70px;
+        right: 0;
+        width: 100%;
+        height: 490px;
+        z-index: -1;
+        background: url('../images/bg-body.png');
+        background-size: cover;
+        opacity: .3;
+    }
+    .default-section {
+        width: 800px;
+        height: 500px;
+        background: transparent linear-gradient(180deg, #EAF8FE 0%, #ECFCF7 0%, #ECFCF7 11%, #EAF8FE 100%, #EDFEF4 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 25px;
+        padding: 30px;
+        margin: auto;
+        @media #{$maxSmall} {
+            width: 100%;
+        }
+        @media #{$maxSmallMobile} {
+            height: auto;
+        }
+    }
+}
+
+// Main Label
+.main-label,
+.main-title {
+    display: block;
+    position: relative;
+    color: $blue-color;
+    font-size: 20px;
+    margin-bottom: 35px;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        width: 63px;
+        height: 2px;
+        background: #242F6C 0% 0% no-repeat padding-box;
+        border-radius: 5px;
+    }
+}
+
+// Input Radio Style
+.main-radio {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+    + label {
+        position: relative;
+        font-size: 12px;
+        color: $blue-color;
+        cursor: pointer;
+        &:before {
+            content:'';
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: 2px solid $blue-color;
+            border-radius: 50%;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+            padding: 6px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+    }
+    &:checked {
+        + label {
+            &::before {
+                background-color: $white-color;
+            }
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 6.5px;
+                right: 3px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $blue-color;
+            }
+        }
+    }
+}
+
+// change background section
+.change-bg {
+    &:after {
+        background: url('../images/bg-team.png') no-repeat center center;
+        background-size: cover;
+        height: calc(100% + 20px);
+        bottom: 0;
+        @media #{$maxSmallMobile} {
+            height: calc(100% + 100px);
+        }
+    }
+}
+
+// Main Input
+.main-input {
+    margin-bottom: 30px;
+    width: 435px;
+    height: 35px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #AAAAAA29;
+    border-radius: 10px;
+    border: none;
+    padding-right: 10px;
+    color: $blue-color;
+    font-size: 14px;
+    @media #{$mobile} {
+        width: 100%;
+    }
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+// beseudo elements to main section
+.first-after {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 30px;
+        left: 425px;
+        width: 150px;
+        height: 150px;
+        background-image: url('../images/after-2.png');
+        background-size: cover;
+        @media #{$mobile} {
+            width: 80px;
+            height: 80px;
+            left: 50px;
+            bottom: 0;
+        }
+        @media #{$ipadPro} {
+            left: 240px;
+        }
+    }
+    .second-after {
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-image: url('../images/after-1.png');
+            background-size: cover;
+            @media #{$mobile} {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            left: -110px;
+            z-index: 1;
+            width: 150px;
+            height: 150px;
+            background-image: url('../images/after-3.png');
+            background-size: cover;
+            display: none;
+            @media #{$minLarge} {
+                display: block;
+            }
+        }
+    }
+}
+
+/* =====[End: Global rules]===== */

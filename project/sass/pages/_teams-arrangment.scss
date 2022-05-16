@@ -1,0 +1,128 @@
+.teams-arrangment {
+    .teams-content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @media #{$mobile} {
+            margin-top: 30px;
+        }
+        > div {
+            width: 50%;
+            @media #{$mobile} {
+                width: 100%;
+                text-align: center
+            }
+            @media #{$ipadPro} {
+                width: 80%
+            }
+            img {
+                max-width: 40px;
+                height: 40px;
+                object-fit: cover;
+            }
+            .title-teams {
+                color: $blue-color;
+                margin-bottom: 15px;
+            }
+            .teams-desc {
+                color: $flat-sky;
+                margin-bottom: 25px;
+                font-size: 19px;
+            }
+            .teams-info {
+                font-size: 15px;
+            }
+        }
+    }
+    .teams-table {
+        > div {
+            width: 350px;
+            height: 500px;
+            margin-right: 50px;
+            position: relative;
+            @media #{$mobile} {
+                margin: 30px auto;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -150px;
+                height: 100%;
+                width: 150px;
+                background: url('../images/bg-arrangment-sec.png') no-repeat center center;
+                @media #{$mobile} {
+                    display: none;
+                }
+            }
+            .table-content {
+                width: 350px;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000029;
+                border-radius: 10px;
+                height: 500px;
+                position: relative;
+                @media #{$mobile} {
+                    margin: auto;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 35%;
+                    height: 100%;
+                    width: 2px;
+                    background-color: #E1E1E1;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 35%;
+                    height: 100%;
+                    width: 2px;
+                    background-color: #E1E1E1;
+                }
+                .list-header {
+                    background-color: #00DED857;
+                    border-radius: 10px 10px 0px 0px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 50px;
+                    font-size: 17px;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    position: sticky;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    span {
+                        font-weight: bold;
+                        font-size: 18px;
+                        color: $blue-color;
+                    }
+                }
+                .teams-items {
+                    height: 450px;
+                    overflow-x: auto;
+                    li {
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        min-height: 50px;
+                        font-size: 17px;
+                        padding-right: 10px;
+                        padding-left: 10px;
+                        span {
+                            width: 33.33333%;
+                            color: #00B3D6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

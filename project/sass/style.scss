@@ -1,0 +1,38 @@
+// Variables
+@import "helpers/variables";
+
+// Extends
+@import "helpers/extends";
+
+// Shared Style
+@import "helpers/shared-style";
+
+// Buttons
+@import "components/buttons";
+
+// Navbar
+@import "layouts/navbar";
+
+// Footer
+@import "layouts/footer";
+
+// Home Page
+@import "pages/homepage";
+
+// Add a new Team
+@import "pages/new-team";
+
+// Add Question
+@import "pages/add-question";
+
+// Select Team
+@import "pages/select-team";
+
+// Teams Arrangment
+@import "pages/teams-arrangment";
+
+// Work Team
+@import "pages/work-team";
+
+// Competition
+@import "pages/competition";

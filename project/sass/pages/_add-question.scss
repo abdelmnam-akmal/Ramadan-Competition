@@ -1,0 +1,35 @@
+.add-question {
+    background: none;
+    .add-a-question {
+        .questions-content {
+            .main-form {
+                .custom-form {
+                    width: 435px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-bottom: 15px;
+                    @media #{$mobile} {
+                        width: 100%;
+                    }
+                    @media #{$maxSmallMobile} {
+                        flex-direction: column;
+                    }
+                    .form-content {
+                        width: 48%;
+                        @media #{$maxSmallMobile} {
+                            width: 100%;
+                        }
+                        .main-input {
+                            width: 100%;
+                            margin-bottom: 6px;
+                        }
+                        div {
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

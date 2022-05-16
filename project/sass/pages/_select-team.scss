@@ -1,0 +1,30 @@
+.select-team {
+    .add-a-question {
+        .second-after {
+            &:before {
+                @media #{$minLarge} {
+                    display: none;
+                }
+            }
+            .main-form {
+                .form-group {
+                    margin-bottom: 30px;
+                    @media #{$maxSmallMobile} {
+                        margin-bottom: 20px;
+                    }
+                    .form-select {
+                        width: 435px;
+                        height: 35px;
+                        @media #{$mobile} {
+                            width: 100%;
+                        }
+                        &:focus {
+                            box-shadow: none;
+                            border-color: #ced4da;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

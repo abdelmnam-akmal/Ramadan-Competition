@@ -1,0 +1,46 @@
+.homepage {
+    .home-content {
+        padding-right: 60px;
+        @media #{$maxSmallMobile} {
+            padding-right: calc(var(--bs-gutter-x) * .5);
+            margin-bottom: 40px;
+        }
+        > div {
+            .home-title {
+                margin-bottom: 30px;
+                color: $blue-color;
+                font-size: 35px;
+                line-height: 1.6;
+                @media #{$maxSmallMobile} {
+                    font-size: 25px;
+                }
+                span {
+                    font-size: 28px;
+                    @media #{$maxSmallMobile} {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .home-desc {
+                font-size: 22px;
+                color: $flat-sky;
+                padding-left: 100px;
+                margin-bottom: 30px;
+                @media #{$maxSmallMobile} {
+                    padding-left: 0;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .home-img {
+        img {
+            @media #{$ipadPro} {
+                max-width: 100%;
+            }
+            @media #{$maxSmallMobile} {
+                max-width: 100%;
+            }
+        }
+    }
+}

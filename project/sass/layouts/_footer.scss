@@ -1,0 +1,24 @@
+.footer {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px -1px 6px #00000029;
+    padding: 15px 0;
+    color: $blue-color;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    @media #{$mobile} {
+        position: relative;
+        font-size: 13px;
+    }
+    p {
+        margin: 0;
+        color: $blue-color;
+        .coding-sheet {
+            font-size: 14px;
+            @media #{$maxSmallMobile} {
+                font-size: 11px;
+            }
+        }
+    }
+}
